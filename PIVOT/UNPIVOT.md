@@ -60,7 +60,7 @@ Iremos obter a seguinte tabela:
 </p>
 
 ><br>
->Nota: Note que as colunas "Math", "English", "History", "Science" viraram linhas da nova coluna criada "Course"<br>
+>Nota: Note que as colunas "Math", "English", "History", "Science" viraram linhas da nova coluna criada "Score"<br>
 ><br>
 
 [CodingSight](https://codingsight.com/understanding-pivot-unpivot-and-reverse-pivot-statements/)<br>
