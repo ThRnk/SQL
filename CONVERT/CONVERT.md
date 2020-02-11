@@ -73,6 +73,43 @@ Os exemplos a seguir utilizaram a data "10/02/2020 14:22:41:907" como base.
 |       111 |  `SELECT CONVERT(varchar, GETDATE(), 107)` |   10/02/2020 |
 |       112 |  `SELECT CONVERT(varchar, GETDATE(), 107)` |     20200210 |
 
+### Formatos Somente Horário
+  
+|  Formato  |                    Query                   |   Resultado  |
+| --------: | :----------------------------------------: | -----------: |
+|         8 |  `SELECT CONVERT(varchar, GETDATE(), 8)`   |     14:22:41 |
+|        14 |  `SELECT CONVERT(varchar, GETDATE(), 14)`  | 14:22:41:907 |
+|        24 |  `SELECT CONVERT(varchar, GETDATE(), 24)`  |     14:22:41 |
+|       108 |  `SELECT CONVERT(varchar, GETDATE(), 108)` |     14:22:41 |
+|       114 |  `SELECT CONVERT(varchar, GETDATE(), 114)` | 14:22:41:907 |
+
+### Formatos Data e Horário
+  
+|  Formato  |                    Query                   |            Resultado         |
+| --------: | :----------------------------------------: | ---------------------------: |
+|         0 |  `SELECT CONVERT(varchar, GETDATE(), 0)`   |          Feb 10 2020  2:22PM |
+|         9 |  `SELECT CONVERT(varchar, GETDATE(), 9)`   |   Feb 10 2020  2:22:41:907PM |
+|        13 |  `SELECT CONVERT(varchar, GETDATE(), 13)`  |     10 Feb 2020 14:22:41:907 |
+|        20 |  `SELECT CONVERT(varchar, GETDATE(), 20)`  |             10/02/2020 14:22 |
+|        21 |  `SELECT CONVERT(varchar, GETDATE(), 21)`  |      2020-02-10 14:22:41.907 |
+|        22 |  `SELECT CONVERT(varchar, GETDATE(), 22)`  |             02/10/2020 14:22 |
+|        25 |  `SELECT CONVERT(varchar, GETDATE(), 25)`  |      2020-02-10 14:22:41.907 |
+|       100 |  `SELECT CONVERT(varchar, GETDATE(), 100)` |          Feb 10 2020  2:22PM |
+|       109 |  `SELECT CONVERT(varchar, GETDATE(), 109)` |   Feb 10 2020  2:22:41:907PM |
+|       113 |  `SELECT CONVERT(varchar, GETDATE(), 113)` |     10 Feb 2020 14:22:41:907 |
+|       120 |  `SELECT CONVERT(varchar, GETDATE(), 120)` |             10/02/2020 14:22 |
+|       121 |  `SELECT CONVERT(varchar, GETDATE(), 121)` |      2020-02-10 14:22:41.907 |
+|       126 |  `SELECT CONVERT(varchar, GETDATE(), 126)` |      2020-02-10T14:22:41.907 |
+|       127 |  `SELECT CONVERT(varchar, GETDATE(), 127)` |      2020-02-10T14:22:41.907 |
+
+
+### Formatos de Calendário Islâmico
+  
+|  Formato  |                    Query                   |              Resultado            |
+| --------: | :----------------------------------------: | --------------------------------: |
+|       130 |  `SELECT CONVERT(varchar, GETDATE(), 130)` |   16 جمادى الثانية 1441  2:22:41 |
+|       131 |  `SELECT CONVERT(varchar, GETDATE(), 131)` |         16/06/1441  2:22:41:907PM |
+
 
 </p>
 
